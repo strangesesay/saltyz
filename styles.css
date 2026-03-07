@@ -1,13 +1,13 @@
-﻿:root {
-  --bg: #0f0f0f;
-  --panel: #171717;
-  --text: #efeae2;
-  --muted: #c5b9a8;
-  --gold: #c3a46e;
-  --gold-bright: #e0c58f;
-  --neutral: #f5f1ea;
-  --line: rgba(255, 255, 255, 0.12);
-  --shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+:root {
+  --bg: #230a4d;
+  --panel: #35106d;
+  --text: #ffffff;
+  --muted: #d9cfff;
+  --gold: #7e3af2;
+  --gold-bright: #c4b5fd;
+  --neutral: #ffffff;
+  --line: rgba(255, 255, 255, 0.24);
+  --shadow: 0 18px 45px rgba(17, 7, 37, 0.45);
 }
 
 * {
@@ -23,7 +23,7 @@ html {
 body {
   font-family: "Manrope", sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at 20% 0%, #23201a 0%, var(--bg) 45%);
+  background: radial-gradient(circle at 20% 0%, #5b21b6 0%, var(--bg) 45%);
   line-height: 1.65;
 }
 
@@ -42,7 +42,7 @@ img {
 }
 
 .section-dark {
-  background: linear-gradient(135deg, #131313, #1a1714);
+  background: linear-gradient(135deg, #2e1065, #4c1d95);
 }
 
 h1,
@@ -57,7 +57,7 @@ h1 { font-size: clamp(2.9rem, 7vw, 5.2rem); }
 h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0.9rem; }
 h3 { font-size: 1.35rem; }
 
-p { color: #ddd4c7; }
+p { color: #f5f3ff; }
 
 .eyebrow {
   color: var(--gold-bright);
@@ -72,8 +72,8 @@ p { color: #ddd4c7; }
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(10px);
-  background: rgba(9, 9, 9, 0.68);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(35, 10, 77, 0.72);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .navbar {
@@ -141,7 +141,7 @@ p { color: #ddd4c7; }
 
 .page-hero {
   min-height: 52vh;
-  background: linear-gradient(120deg, rgba(195, 164, 110, 0.15), rgba(0, 0, 0, 0.8));
+  background: linear-gradient(120deg, rgba(124, 58, 237, 0.2), rgba(35, 10, 77, 0.85));
 }
 
 .page-title {
@@ -151,7 +151,7 @@ p { color: #ddd4c7; }
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.45));
+  background: linear-gradient(90deg, rgba(35, 10, 77, 0.82), rgba(35, 10, 77, 0.48));
 }
 
 .hero-content {
@@ -162,7 +162,7 @@ p { color: #ddd4c7; }
 
 .tagline {
   font-size: clamp(1.1rem, 2.4vw, 1.45rem);
-  color: #f3eadc;
+  color: #ffffff;
   margin-top: 0.8rem;
 }
 
@@ -193,11 +193,11 @@ p { color: #ddd4c7; }
 
 .btn-gold {
   background: linear-gradient(120deg, var(--gold), var(--gold-bright));
-  color: #18120a;
+  color: #ffffff;
 }
 
 .btn-outline {
-  border-color: rgba(255, 255, 255, 0.42);
+  border-color: rgba(255, 255, 255, 0.5);
   color: var(--neutral);
   background: transparent;
 }
@@ -212,7 +212,7 @@ p { color: #ddd4c7; }
 .card,
 .booking-form,
 .map-wrap {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.06);
   border: 1px solid var(--line);
   border-radius: 16px;
   box-shadow: var(--shadow);
@@ -261,7 +261,7 @@ p { color: #ddd4c7; }
 
 .card:hover {
   transform: translateY(-4px);
-  border-color: rgba(224, 197, 143, 0.5);
+  border-color: rgba(196, 181, 253, 0.65);
 }
 
 .text-link {
@@ -296,8 +296,8 @@ p { color: #ddd4c7; }
   position: absolute;
   inset: auto 0 0 0;
   padding: 0.75rem 0.9rem;
-  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.85));
-  color: #f3ebdd;
+  background: linear-gradient(180deg, transparent, rgba(35, 10, 77, 0.9));
+  color: #ffffff;
   transform: translateY(100%);
   transition: transform 0.3s ease;
   font-size: 0.92rem;
@@ -329,7 +329,7 @@ p { color: #ddd4c7; }
   border: 1px solid var(--line);
   border-radius: 10px;
   padding: 0.72rem 0.78rem;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(35, 10, 77, 0.45);
   color: var(--neutral);
 }
 
@@ -395,7 +395,7 @@ p { color: #ddd4c7; }
 
 .site-footer {
   border-top: 1px solid var(--line);
-  background: #0b0b0b;
+  background: #1f0945;
   padding: 2.2rem 0 1rem;
 }
 
@@ -424,7 +424,7 @@ p { color: #ddd4c7; }
 .copyright {
   margin-top: 1rem;
   text-align: center;
-  color: #968b7a;
+  color: #d9cfff;
   font-size: 0.88rem;
 }
 
@@ -461,7 +461,7 @@ p { color: #ddd4c7; }
     top: 74px;
     right: 4%;
     width: min(280px, 90vw);
-    background: rgba(10, 10, 10, 0.95);
+    background: rgba(35, 10, 77, 0.96);
     border: 1px solid var(--line);
     border-radius: 14px;
     padding: 1rem;
