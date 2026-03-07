@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Book an appointment at SALTYZ." />
+  <title>Booking | SALTYZ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header"><nav class="navbar container"><a href="index.html" class="brand">SALTYZ</a><button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button><ul class="nav-links"><li><a href="index.html" data-nav="index.html">Home</a></li><li><a href="about.html" data-nav="about.html">About</a></li><li><a href="services.html" data-nav="services.html">Services</a></li><li><a href="gallery.html" data-nav="gallery.html">Gallery</a></li><li><a href="booking.html" data-nav="booking.html">Booking</a></li><li><a href="testimonials.html" data-nav="testimonials.html">Testimonials</a></li><li><a href="contact.html" data-nav="contact.html">Contact</a></li></ul></nav></header>
+  <main>
+    <section class="page-hero section"><div class="container reveal"><p class="eyebrow">Booking</p><h1 class="page-title">Reserve Your Appointment</h1></div></section>
+    <section class="section section-dark"><div class="container booking-wrap"><div class="section-head reveal"><h2>Appointment Form</h2><p class="muted">Form submissions are handled securely via Formspree.</p></div><form class="booking-form reveal" data-booking-form data-formspree="https://formspree.io/f/xpqywwda"><label>Name<input type="text" name="name" required /></label><label>Phone<input type="tel" name="phone" required /></label><label>Email<input type="email" name="email" required /></label><label>Service<select name="service" required><option value="" disabled selected>Select a service</option><option>Hair Styling</option><option>Hair Cutting</option><option>Hair Coloring</option><option>Makeup</option><option>Manicure &amp; Pedicure</option><option>Facial Treatment</option></select></label><label>Date<input type="date" name="date" required /></label><label>Time<input type="time" name="time" required /></label><button type="submit" class="btn btn-gold" data-submit-button>Confirm Booking</button></form><p class="form-status" data-booking-status></p></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div><a href="index.html" class="brand">SALTYZ</a><p>Luxury Hair &amp; Beauty Experience</p></div><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="booking.html">Booking</a><a href="contact.html">Contact</a></div><div class="social-links"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></div></div><p class="copyright">&copy; <span class="current-year"></span> SALTYZ. All rights reserved.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
