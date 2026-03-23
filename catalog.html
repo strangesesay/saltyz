@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse SALTYZ hair style catalog with prices." />
+  <title>Catalog | SALTYZ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.4rem;
+    }
+
+    .catalog-card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+      transition: transform 0.25s ease, border-color 0.25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .catalog-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(255, 159, 67, 0.6);
+    }
+
+    .catalog-card img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      display: block;
+    }
+
+    .catalog-card-body {
+      padding: 1.1rem 1.2rem 1.3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      flex: 1;
+    }
+
+    .catalog-card-body h3 {
+      font-size: 1.1rem;
+      color: #fff;
+    }
+
+    .catalog-card-body p {
+      font-size: 0.85rem;
+      color: #c9c9c9;
+      flex: 1;
+    }
+
+    .catalog-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0.8rem;
+    }
+
+    .catalog-price {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #ff9f43;
+      font-family: "Playfair Display", serif;
+    }
+
+    .catalog-badge {
+      font-size: 0.72rem;
+      background: rgba(255, 159, 67, 0.15);
+      border: 1px solid rgba(255, 159, 67, 0.35);
+      color: #ff9f43;
+      border-radius: 999px;
+      padding: 0.2rem 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    @media (max-width: 980px) {
+      .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 560px) {
+      .catalog-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="brand">SALTYZ</a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-nav="index.html">Home</a></li>
+        <li><a href="about.html" data-nav="about.html">About</a></li>
+        <li><a href="services.html" data-nav="services.html">Services</a></li>
+        <li><a href="catalog.html" data-nav="catalog.html">Catalog</a></li>
+        <li><a href="gallery.html" data-nav="gallery.html">Gallery</a></li>
+        <li><a href="booking.html" data-nav="booking.html">Booking</a></li>
+        <li><a href="testimonials.html" data-nav="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html" data-nav="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero section">
+      <div class="container reveal">
+        <p class="eyebrow">Hair Style Catalog</p>
+        <h1 class="page-title">Find Your Perfect Look</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Browse Styles</p>
+          <h2>Our Hair Style Collection</h2>
+          <p>Explore our curated catalog of premium hair styles. Book any look directly from the card.</p>
+        </div>
+
+        <div class="catalog-grid">
+
+          <article class="catalog-card reveal">
+            <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=800&q=80" alt="Silk Press" loading="lazy" />
+            <div class="catalog-card-body">
+              <h3>Silk Press</h3>
+              <p>A sleek, glossy finish that leaves hair smooth and frizz-free with lasting shine.</p>
+              <div class="catalog-card-footer">
+                <span class="catalog-price">SLL 350,000</span>
+                <span class="catalog-badge">Styling</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card reveal">
+            <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=800&q=80" alt="Box Braids" loading="lazy" />
+            <div class="catalog-card-body">
+              <h3>Box Braids</h3>
+              <p>Classic protective style with neat, square-parted braids in any length you prefer.</p>
+              <div class="catalog-card-footer">
+                <span class="catalog-price">SLL 500,000</span>
+                <span class="catalog-badge">Braiding</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card reveal">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Balayage Color" loading="lazy" />
+            <div class="catalog-card-body">
+              <h3>Balayage Color</h3>
+              <p>Hand-painted highlights for a natural, sun-kissed gradient effect on any hair type.</p>
+              <div class="catalog-card-footer">
+                <span class="catalog-price">SLL 650,000</span>
+                <span class="catalog-badge">Coloring</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card reveal">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" alt="Blowout" loading="lazy" />
+            <div class="catalog-card-body">
+              <h3>Blowout</h3>
+              <p>Voluminous, bouncy blowout that adds body and movement for an effortlessly polished look.</p>
+              <div class="catalog-card-footer">
+                <span class="catalog-price">SLL 200,000</span>
+                <span class="catalog-badge">Styling</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card reveal">
+            <img src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?auto=format&fit=crop&w=800&q=80" alt="Knotless Braids" loading="lazy" />
+            <div class="catalog-card-body">
+              <h3>Knotless Braids</h3>
+              <p>Lightweight, tension-free braids that start with your natural hair for a seamless look.</p>
+              <div class="catalog-card-footer">
+                <span class="catalog-price">SLL 580,000</span>
+                <span class="catalog-badge">Braiding</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card reveal">
+            <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=800&q=80" alt="Full Color" loading="lazy" />
+            <div class="catalog-card-body">
+              <h3>Full Color</h3>
+              <p>Complete single-process color application for a bold, uniform transformation.</p>
+              <div class="catalog-card-footer">
+                <span class="catalog-price">SLL 420,000</span>
+                <span class="catalog-badge">Coloring</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card reveal">
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=800&q=80" alt="Precision Cut" loading="lazy" />
+            <div class="catalog-card-body">
+              <h3>Precision Cut</h3>
+              <p>Expert scissor cut tailored to your face shape for a sharp, defined finish.</p>
+              <div class="catalog-card-footer">
+                <span class="catalog-price">SLL 180,000</span>
+                <span class="catalog-badge">Cutting</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card reveal">
+            <img src="https://images.unsplash.com/photo-1595475884562-073c30d45670?auto=format&fit=crop&w=800&q=80" alt="Twist Out" loading="lazy" />
+            <div class="catalog-card-body">
+              <h3>Twist Out</h3>
+              <p>Defined, coily curls achieved through two-strand twists for a natural, textured style.</p>
+              <div class="catalog-card-footer">
+                <span class="catalog-price">SLL 250,000</span>
+                <span class="catalog-badge">Natural</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog-card reveal">
+            <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80" alt="Updo & Bridal" loading="lazy" />
+            <div class="catalog-card-body">
+              <h3>Updo &amp; Bridal</h3>
+              <p>Elegant updos and bridal styling for weddings, events, and special occasions.</p>
+              <div class="catalog-card-footer">
+                <span class="catalog-price">SLL 750,000</span>
+                <span class="catalog-badge">Special</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="text-align:center; margin-top: 2.5rem;" class="reveal">
+          <a href="booking.html" class="btn btn-gold">Book Your Style</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand">SALTYZ</a>
+        <p>Luxury Hair &amp; Beauty Experience</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="booking.html">Booking</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+    <p class="copyright">&copy; <span class="current-year"></span> SALTYZ. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="chat.js"></script>
+</body>
+</html>
